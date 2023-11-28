@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.18",
+    "@mui/styled-engine": "^5.14.18",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "countries": "^1.0.2",
