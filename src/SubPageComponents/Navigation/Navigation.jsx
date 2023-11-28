@@ -11,7 +11,7 @@ import { userContext } from '../../Context/UserContext';
 
 export default function Navigation() {
   const { cartProducts } = useContext(CartContext);
-  const {setUser} = useContext(userContext);
+  const { setUser } = useContext(userContext);
   const { LikedProducts } = useContext(LikedContext);
   const [isNavbarAtTop, setIsNavbarAtTop] = useState(true);
   const { pathname } = useLocation();

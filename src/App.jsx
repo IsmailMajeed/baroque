@@ -17,7 +17,7 @@ import { UserContextProvider } from "./Context/UserContext";
 function App() {
   axios.defaults.baseURL = 'https://my-test-server-deeb17d1c234.herokuapp.com/';
   return (
-    <div className="App selection:bg-gray-400">
+    <div className="selection:bg-gray-400 overflow-hidden">
       <UserContextProvider>
         <CartContextProvider>
           <LikedContextProvider>

@@ -86,7 +86,7 @@ function Pricing() {
   }
 
   return (
-    <>
+    <div>
       {
         product.productName &&
         <Helmet>
@@ -94,7 +94,7 @@ function Pricing() {
         </Helmet>
       }
       {
-        product.price ? (
+        product.price && (
           <>
             <div className='sticky top-28 z-10'>
               <div className={`absolute right-10 -top-8 bg-white border py-8 px-10 max-w-md transition-all duration-500 ${showCart ? '' : 'opacity-0 pointer-events-none'}`}>
@@ -141,7 +141,7 @@ function Pricing() {
                   product.images ? (<ImageCarousel urls={product.images} />) : (<></>)
                 }
               </div>
-              <div className='flex flex-col gap-3 pr-10'>
+              <div className='flex flex-col gap-3 md:pr-10'>
                 <nav className='text-lg text-gray-600 pl-10'>{product.productName}</nav>
                 <b className='pl-10 text-lg'>
                   {
@@ -326,11 +326,9 @@ function Pricing() {
               }
             </Container>
           </>
-        ) : (
-          <></>
         )
       }
-    </>
+    </div>
   )
 }
 
