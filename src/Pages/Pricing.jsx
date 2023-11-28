@@ -316,14 +316,13 @@ function Pricing() {
             <div className='text-center text-xl font-semibold mt-5 mb-4'>YOU MAY ALSO LIKE</div>
             <Container className='grid md:grid-cols-3 gap-3 text-center mb-5 px-5'>
               {
-                featured.length ? (
+                featured.length && (
                   <>
                     <Product discount={featured[0].discount} ids={featured[0]._id} price={featured[0].price} title={featured[0].productName} image={featured[0].images} />
                     <Product discount={featured[1].discount} ids={featured[1]._id} price={featured[1].price} title={featured[1].productName} image={featured[1].images} />
                     <Product discount={featured[2].discount} ids={featured[2]._id} price={featured[2].price} title={featured[2].productName} image={featured[2].images} />
                   </>
-                ) :
-                  (<></>)
+                )
               }
             </Container>
           </>
