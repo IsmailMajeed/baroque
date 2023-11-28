@@ -314,7 +314,7 @@ function Pricing() {
               </div>
             </Container>
             <div className='text-center text-xl font-semibold mt-5 mb-4'>YOU MAY ALSO LIKE</div>
-            <Container className='grid grid-cols-3 gap-3 text-center mb-5 px-5'>
+            <Container className='grid md:grid-cols-3 gap-3 text-center mb-5 px-5'>
               {
                 featured.length ? (
                   <>
