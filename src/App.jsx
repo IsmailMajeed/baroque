@@ -15,7 +15,7 @@ import axios from "axios";
 import { UserContextProvider } from "./Context/UserContext";
 
 function App() {
-  axios.defaults.baseURL = 'https://my-test-server-deeb17d1c234.herokuapp.com/';
+  axios.defaults.baseURL = 'https://node-server-baroque-lite-f749012f808c.herokuapp.com/';
   return (
     <div className="selection:bg-gray-400 overflow-hidden">
       <UserContextProvider>
