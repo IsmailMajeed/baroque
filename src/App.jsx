@@ -13,9 +13,10 @@ import Liked from "./Pages/Liked";
 import { LikedContextProvider } from "./Context/LikedContext";
 import axios from "axios";
 import { UserContextProvider } from "./Context/UserContext";
+import { PREFIX } from "./Constants";
 
 function App() {
-  axios.defaults.baseURL = 'https://node-server-baroque-lite-f749012f808c.herokuapp.com/';
+  axios.defaults.baseURL = PREFIX;
   return (
     <div className="selection:bg-gray-400 overflow-hidden">
       <UserContextProvider>
