@@ -27,7 +27,7 @@ export default function SliderOpt() {
     };
   }, []);
   return (
-    <>
+    <div className='overflow-hidden'>
       <Slider {...settings}
         className='flex justify-between bg-black text-white text-center py-1.5' ref={sliderRef}>
         <div className="slide">
@@ -40,6 +40,6 @@ export default function SliderOpt() {
           <span className='text-sm font-bold'>EXCHANGE FORM <Link className='text-gray-600'>(CLICK HERE)</Link></span>
         </div>
       </Slider >
-    </>
+    </div>
   );
 }

@@ -114,7 +114,7 @@ export default function Features() {
             <Link className="no-underline" to="/AllProducts">
               {
                 imageUrl ?
-                  <img src={PREFIX + imageUrl} alt="err" className="max-w-full" />
+                  <img src={PREFIX + imageUrl} alt="err" className="w-screen" />
                   : <></>
               }
               <div className="w-full flex justify-center relative -top-24">
