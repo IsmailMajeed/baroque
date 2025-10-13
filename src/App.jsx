@@ -18,7 +18,7 @@ import { PREFIX } from "./Constants";
 function App() {
   axios.defaults.baseURL = PREFIX;
   return (
-    <div className="selection:bg-gray-400 overflow-hidden">
+    <div className="selection:bg-gray-400">
       <UserContextProvider>
         <CartContextProvider>
           <LikedContextProvider>
