@@ -29,7 +29,6 @@ export default function SliderOpt() {
   return (
     <div className='overflow-hidden'>
       <Slider {...settings}
-        w
         className='flex justify-between bg-black text-white text-center py-1.5' ref={sliderRef}>
         <div className="slide">
           <span className='text-sm font-bold'>FREE SHIPPING IN PAKISTAN</span>
